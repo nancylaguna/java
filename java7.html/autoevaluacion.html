@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="/Nancyhtml/index.html">
+        <img src="botonregresar.png" width="120"
+        height="50" alt="Regresar">
+    </a>
+    <title>Ejercicios de autoevaluación</title>
+</head>
+<body>
+    <h1>Ejercicios de autoevaluación</h1>
+    <ol>
+        <h2>7.1 Complete los siguientes enunciados:</h2>
+        <li>
+            Todas las secuencias de comandos pueden escribirse en términos de tres tipos de estructuras de control: <strong>secuencia, selección y repetición.</strong>
+        </li>
+        <li>
+            La instrucción de selección doble <strong>if....else</strong> se utiliza para ejecutar una acción cuando una condición es verdadera, y otra acción cuando esa condición es falsa.
+        </li>
+        <li>
+            Al proceso de repetir un conjunto de instrucciones un número específico de veces se le llama repetición <strong>controlada por contador (o definida).</strong> 
+        </li>
+        <li>
+            Cuando no se sabe de antemano cuántas veces se repetirá un conjunto de instrucciones, se puede usar un valor <strong>centinela (o un de señal, de bandera o de prueba) </strong> para terminar la repetición.
+        </li>
+    </ol>
+    <ol>
+        <h2>7.2 Escriba cuatro instrucciones de JavaScript que sumen 1, cada una, a la variable x, que contiene un número.</h2>
+        <li>
+            x = x + 1;
+        </li>
+        <li>
+            x += 1;
+        </li>
+        <li>
+            ++x;
+        </li>
+        <li>
+            x++;
+        </li>
+    </ol>
+    <ol>
+        <h2>7.3 Escriba instrucciones en JavaScript para realizar cada una de las siguientes tareas:</h2>
+        <li>
+            Asignar la suma de x y y a z, e incrementar el valor de x en 1 después del cálculo. Usar sólo una insttrucción.
+            <strong>
+                z = x++ + y;
+            </strong>
+        </li>
+        <li>
+            Evaluar si el valor de la variable cuenta es mayor que 10. De ser así, imprimir "Cuenta es mayor que 10".
+            <strong>
+                if (cuenta > 10)
+                document.writeln("Cuenta es mayor que 10");
+            </strong>
+        </li>
+        <li>
+            Decrementar la variable x en 1, luego restarla a la variable total. Usar sólo una instrucción.
+            <strong>
+                total -= --x;
+            </strong>
+        </li>
+        <li>
+            Calcular el residuo después de dividir q entre divisor y asignar el resultado a q. Escriba esta instrucción de dos maneras distintas.
+            <strong>
+                q %= divisor;
+                q = q % divisor;
+            </strong>
+        </li>
+    </ol>
+    <ol>
+        <h2>7.4 Escriba una instrucción en JavaScript para realizar cada una de las siguientes tareas:</h2>
+        <li>
+            Declarar las variables suma y x.
+            <strong>
+                var suma, x;
+            </strong>
+        </li>
+        <li>
+            Asignar 1 a la variable x.
+            <strong>
+                x = 1;
+            </strong>
+        </li>
+        <li>
+            Asignar 0 a la variable suma.
+            <strong>
+                suma = 0;
+            </strong>
+        </li>
+        <li>
+            Sumar la variable x a suma y asignar el resultado a la variable suma.
+            <strong>
+                suma += x; o suma = suma + x;
+            </strong>
+        </li>
+        <li>
+            Imprimir "La suma es: ", seguido del valor de la variable suma.
+            <strong>
+                document.writeln("La suma es: ", + suma);
+            </strong>
+        </li>
+    </ol>
+    <ol>
+        <h2>7.5 Combine las instrucciones que escribió en el ejercicio 7.4 para formar una secuencia de comandos que calcule e imprima la suma de los enteros del 1 al 10. Use la instrucción while para iterar a través de las instrucciones de cálculo e incremento. El ciclo debe terminar cuando el valor de x se vuelva 11.</h2>
+        <li>
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Sumar los enteros del 1 al 10</title>
+                <script>
+                    var suma;
+                    var x;
+                    x = 1;
+                    suma = 0;
+                    while (x <= 10){
+                        suma += x;
+                        ++x;
+                    }
+                    document.writeln("La suma es: " + suma);
+                </script>
+            </head>
+            <body>
+                
+            </body>
+            </html>
+        </li>
+    </ol>
+    <ol>
+        <h2>7.6 Determine el valor de cada variable después de realizar el cálculo. Suponga que, cuando se empieza a ejecutar cada instrucción, todas las variables tienen el valor entero 5.</h2>
+        <li>
+            producto *= x++;
+            <strong>
+                producto = 25, x = 6;
+            </strong>
+        </li>
+        <li>
+            cociente /= +xx;
+            <strong>
+                cociente = 0.833333..., x = 6;
+            </strong>
+        </li>
+    </ol>
+    <ol>
+        <h2>7.7 Identifique y corrija los errores en cada uno de los siguientes segmentos de código:</h2>
+        <li>
+            while (c <= 5){
+                producto *= c;
+                ++c;
+            <strong>
+                Error: falta la llave derecha de cierre del cuuerpo de la instrucción while.
+                Corrección: Agregar una llave derecha de cierra después de la instrucción ++c;
+            </strong> 
+        </li>
+        <>
+            if (genero == 1)
+                document.writeln("Mujer");
+            else;
+            document.writeln("Hombre");
+            <strong>
+                Error: El ; después de else produce un error lógico. La segunda instrucción de salida siempre se ejecutará
+                Correción: Quitar el punto y coma después de else
+            </strong>
+        </li>
+    </ol>
+    <ol>
+        <h2>7.8 ¿Qué está mal en la siguiente instrucción de repetición while?</h2>
+        <li>
+            while (z >= 0)
+            suma += z;
+            <strong>
+                El valor de la variable z nunca se cambia en el cuaerpo de la instrucción while. Por lo tanto, si la condición de continuación de ciclo (z >= 0) es verdadera, se crea un ciclo infinito. Para evitar que ocurra un ciclo infinito, z debe decrementarse de manera que en un momento dado se vuelva menor que 0.
+            </strong>
+        </li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="/Nancyhtml/index.html">
+        <img src="botonregresar.png" width="120"
+        height="50" alt="Regresar">
+    </a>
+    <title>Cálculo de interés compuesto</title>
+    <style type = "text/css">
+        table {
+            width: 300px;
+            border-collapse: collapse;
+            background-color: lightblue;
+        }
+        table, td, th {
+            border: 1px, solid black;
+            padding: 4px;
+        }
+        th {
+            text-align: left;
+            color: white;
+            background-color: darkblue;
+        }
+        tr.filaimpar {
+            background-color: white;
+        }
+    </style>
+    <script>
+        var monto;
+        var principal=1000.00;
+        var tasa=0.05;
+        document.writeln("<table>");
+        document.writeln("<caption>Cálculo de interés compuesto</caption>");
+        document.writeln("<thead><tr><th>Año</th>");
+        document.writeln("<th>Monto de depósito</th>");
+        document.writeln("</tr></thead><tbody>");
+        for(var año =1; año<=10; ++año){
+            monto = principal * Math.pow(1.0 + tasa, año);
+            if(año % 2 !== 0)
+            document.writeln("<tr class = filaimpar'><td>" + año + "</td><td>" + monto.toFixed(2) + "</td></tr>");
+            else
+            document.writeln("<tr><td>" + año + "</td><td>" + monto.toFixed(2) + "</td></tr>");
+        }
+        document.writeln("</tbody></table>");
+    </script>    
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="/Nancyhtml/index.html">
+        <img src="botonregresar.png" width="120"
+        height="50" alt="Regresar">
+    </a>
+    <title>Ejercicios de autoevaluación</title>
+</head>
+<body>
+    <ol>
+        <h2>8.1 Indique si cada uno de los siguientes enunciados es verdadero o falso. Si es falso, explique por qué</h2>
+        <li>
+            El caso default es requerido en la instrucción de selección switch. <strong> Falso: El caso default es opcional. Si no se necesita una acción predeterminada, entonces no hay necesidad de un caso default. </strong>
+        </li>
+        <li>
+            La instrucción break es requerida en el último caso de una instrucción de selección switch. <strong> Falso. La instrucción break se utiliza para salir de switch. La instrucción break no se requiere para el último caso de switch. </strong>
+        </li>
+        <li>
+            La expresión (x > y && a < b) es verdadera si x > y es verdadera, o si a < b es verdadera. <strong> Falso. Ambas expresiones relacionales deben ser verdaderas para que toda la expresión sea verdadera cuando se utilice el operador &&. </strong>
+        </li>
+        <li>
+            Una expresión que contiene el operador || es verdadera si uno o ambos de sus operadores son verdaderos. <strong> Verdadero </strong>
+        </li>
+    </ol>
+    <ol>
+        <h2>8.2 Escriba una instrucción o un conjunto de instrucciones en JavaScript para realizar cada una de las siguientes tareas:</h2>
+        <li>
+            Sumar los enteros impares entre 1 y 99. Utilice una instrucción for. Suponga que se han declaradoo las variable suma y cuenta. 
+            <strong>  
+                suma = 0;
+                for(cuneta = 1; cuenta <=99; cuenta += 2)
+                suma += cuenta;
+            </strong>
+        </li>
+        <li>
+            Calcular el valor de 2.5 elevado a la potencia de 3. Use el método pow.
+            <strong>  
+                Math.pow(2.5, 3);
+            </strong>
+        </li>
+        <li>
+            Imprimir los enteros del 1 al 20 mediante el uso de un ciclo while y la variable contador x. Suponga que la variable x se ha declarado, pero no se ha inicializado. Imprima solamente cinco enteros por línea.
+            <strong>  
+                x = 1;
+                document.writeln("<p>");
+                    while (x <= 20){
+                        docuement.write(x + " ");
+                    if (x % 5 == 0)
+                    document.write("</p><p>");
+                    ++x;
+                    }
+            </strong>
+        </li>
+        <li>
+            Repita el ejercicio 8.2, (c), pero ahora use una instrucción for.
+            <strong>  
+                document.writeln("<p>");
+                    for (x=1; x <= 20; x++){
+                        docuement.write(x + " ");
+                    if (x % 5 == 0)
+                    document.write("</p><p>");
+                    }
+                    document.writeln("</p>");
+            </strong>
+        </li>
+    </ol>
+    <ol>
+        <h2>8.3 Encuentre el error en cada uno de los siguientes segmentos de código, y explique cómo corregirlo:</h2>
+        <li>
+            x = 1;
+            while(x <= 10);
+                ++x;
+            }
+            <strong>  
+                Error: El punto y coma después del encabezado while provoca un ciclo infinito; además falta una llave izquierda.
+                Correción: Reemplazar el punto y coma por una llave izquierda ({), o eliminar tanto el punto y coma (;) como la llave derecha (}).
+            </strong>
+        </li>
+        <li>
+            switch(n){
+                case 1:
+                    document.writeln("El número es 1");
+                case 2:
+                    document.writeln("El número es 2");
+                    break;
+                default:
+                    document.writeln("El número no es 1 ni 2");
+                    break;
+            }
+            <strong>  
+                Error: Falta una instrucción break en las instrucciones del primer case.
+                Correción: Agregue una instrucción break al final de las instrucciones para el primer case. Cabe mencionar que esta omisión no es necesariamente un error, si desea que la instrucción del case 2: se ejecute siempre que lo haga la instrucción del case 1:.
+            </strong>
+        </li>
+        <li>
+            El siguiente código debe imprimir los valores 1 a 10:
+            n = 1;
+            while (n < 10)
+                document.writeln(n++);
+            <strong>  
+                Error: Se está utilizando un operador relacional inadecuado en la condición de continuación de la instrucción de repetición while.
+                Correción: Use <= en vez de <, o cambie el 10 a 11.
+            </strong>
+        </li>
+    </ol>
+</body>
+</html>

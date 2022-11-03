@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="/Nancyhtml/index.html">
+        <img src="botonregresar.png" width="120"
+        height="50" alt="Regresar">
+    </a>
+    <title>Programa del promedio de una clase</title>
+    <script>
+        var total;
+        var contadorCalificaciones;
+        var calificacion;
+        var valorCalificacion;
+        var promedio;
+
+        total=0;
+        contadorCalificaciones=1;
+
+        while (contadorCalificaciones <= 10) {
+            calificacion = window.prompt("Escriba la calificación entera:", "0" );
+            valorCalificacion = parseInt(calificacion);
+            total = total + valorCalificacion;
+            contadorCalificaciones = contadorCalificaciones + 1;
+        }
+        promedio = total / 10;
+        document.writeln("<h1>El promedio de la clase es " + promedio + "</h1>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
