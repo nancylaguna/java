@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="/java/index.html">
+        <img src="botonregresar.png" width="120"
+        height="50" alt="Regresar">
+    </a>
+    <title>Ejercicios de autoevaluación</title>
+</head>
+<body>
+    <ol>
+        <h2>9.1 Complete las siguientes oraciones:</h2>
+        <li>
+            Los módulos de programa en JavaScript se llaman <strong> funciones </strong>.
+        </li>
+        <li>
+            Una función se invoca mediante el uso de un(a) <strong> llamada a la función </strong>.
+        </li>
+        <li>
+            Una variable que se conoce sólo dentro del la funcion en la que se define se llama <strong> variable local </strong>.
+        </li>
+        <li>
+            Una instrucción <strong> return </strong> en una función invocada puede usarse para pasar el valor de una expresión de regreso a la función que hizo la llamada.
+        </li>
+        <li>
+            La palabra clave <strong> function </strong> indica el comienzo de la definición de una función.
+        </li>
+    </ol>
+    <ol>
+        <h2>9.2 Para el programa de la figura 9.13, indique el alcance (ya sea alcance global o de funcion) de cada uno de los siguientes elementos:</h2>
+        <li>
+            La variable x. <strong> alcance global </strong>
+        </li>
+        <li>
+            La variable y. <strong> alcance de función </strong>
+        </li>
+        <li>
+            La función cubo. <strong> alcance global </strong>
+        </li>
+        <li>
+            La función salida. <strong> alcance global </strong>
+        </li>
+    </ol>
+    <ol>
+        <h2>9.3 Complete las siguientes oraciones:</h2>
+        <li>
+            Las funciones definidas por el programador, variables globales y funciones globales de JavaScript son todas partes del objeto <strong> global </strong>.            
+        </li>
+        <li>
+            La funcion <strong> isNan </strong> determina si su argumento es un número o no.
+        </li>
+        <li>
+            La función <strong> escape </strong> recibe un argumentoo de cadena y devuelve una cadena en la que todos los espacios, puntuacón, caracteres de caeptuación y cualquier otro carácter que no esté en el conjunto de caracteres ASCII se codifican en un formato hexadecimal.
+        </li>
+        <li>
+            La función <strong> eval. </strong> recibe un argumento de cadena que representa el código de JavaScript a ejecutar.
+        </li>
+        <li>
+            La funcion <strong> unescape </strong> recibe una cadena como su argumento y devuelve una cadena en donde se decodifican todos los caracteres que se codifican antes con escape.
+        </li>
+    </ol>
+    <ol>
+        <h2>9.4 Complete las siguientes oraciones:</h2>
+        <li>
+            El <strong> alcance </strong> de un identificador es la parte del programa en donde puede usarse.
+        </li>
+        <li>
+            Las tres formas de devolver el control de una función invocada al que la llamó son <strong> return; o return expression; o encontrar la llave derecha de cierra de una función</strong>.
+        </li>
+        <li>
+            La función <strong> Math.random </strong> se utiliza para producir números aleatorios.
+        </li>
+        <li>
+            Las variables declaradas en un bloque o en la lista de parámetros de una función son de alcance <strong> local </strong>.
+        </li>
+    </ol>
+    <ol>
+        <h2>9.5 Localice el error en cada uno de los siguientes segmentos de programa y explique cómo corregirlo:</h2>
+        <li>
+            method g(){
+                document.writeln("Dentro del método g");
+            }
+            <strong>
+                Error: method no es la palabra clave que se utiliza para comenzar la definición de una función.
+                Corrección: cambiar method a function
+            </strong>
+        </li>
+        <li>
+            //Esta función debe devolver la suma de sus argumentos
+            function suma(x, y){
+                var resultado;
+                resultado = x + y;
+            }
+            <strong>
+                Error: se supone que la función debe devolver un valor, pero no es así.
+                Corrección: eliminar la variable resultado y colocar la instrucción return x + y; en la funci´´on o agregar la siguiente instrucción al final del cuerpo de la función: return resultado;
+            </strong>
+        </li>
+        <li>
+            function f(a){
+                docuemnt.writeln(a);
+            }
+            <strong>
+                Error: el punto y coma después del paréntesis derecho que encierra la lista de parámetros.
+                Corrección: elimine el punto y coma después del paréntesis derecho de la lista de parámetros.
+            </strong>
+        </li>
+    </ol>
+    <ol>
+        <h3>9.6 Escriba un programa de JavaScript completo para pedir al usuario el radio de una esfera y luego llama a la función valumenEsfera para calcular y mostrar el volumen de la esfera. 
+        </h3>
+        <li>
+            Use la instrucción volumen = (4.0 / 3.0) * Math.PI * Math.pow(radio, 3); para calcular el volumen. El usuario debe introducir el radio en el elemento input de HTML del tipo "number" en un elemento form. Proporcione al elemento input el valor de id "campoEntrada". Puede usar este id con el método getElementById del objeto document para obtener el docuemnto a usar en la secuencia de comandos. Para acceder a la cadena en campoEntrada, use su propiedad value como en campoEntrada.value y luego convierta la cadena en número, usando parseFloat. Use un elemento input del tipo "button" en el elemento form para que el usuario pueda iniciar el cálculo.  
+        </li>
+    </ol>
+</body>
+</html>

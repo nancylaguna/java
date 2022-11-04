@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="/java/index.html">
+        <img src="botonregresar.png" width="120"
+        height="50" alt="Regresar">
+    </a>
     <title>Imágenes aleatorias de datos</title>
     <style type = "text/css">  
         li{
@@ -22,11 +26,42 @@
         function iniciar(){
             var boton = document.getElemetById("botonTirar");
             boton.addEventListener("click", tirarDados, false);
-            imagenDado1 = document.getElementById        }
-
+            imagenDado1 = document.getElementById("dado1"); 
+            imagenDado2 = document.getElementById("dado2");        
+            imagenDado3 = document.getElementById("dado3");        
+            imagenDado4 = document.getElementById("dado4");               
+        }
+        function tirarDados() {
+            establecerImagen(imagenDado1);
+            establecerImagen(imagenDado2);
+            establecerImagen(imagenDado3);
+            establecerImagen(imagenDado4);
+        }
+        function establecerImagne(imgDado) {
+            var valorDado=Math.floor(1 + Math.random() * 6);
+            imgDado.setAttribute("scr", "dado" + valorDado + ".jpg");
+            imgDado.setAttribute("alt", "imagen de un dado con " + valorDado + " punto(s)");
+        }
+        window.addEventListener("load", iniciar, false);
     </script>
 </head>
 <body>
-    
+    <form action="#">
+        <input id="botonTirar" type="button" value="Tirar dados">
+    </form>
+    <ol>
+        <li>
+            <img id="dado1" src="blanco.jpg" alt="imagen en blanco">
+        </li>
+        <li>
+            <img id="dado2" src="blanco.jpg" alt="imagen en blanco">
+        </li>
+        <li>
+            <img id="dado3" src="blanco.jpg" alt="imagen en blanco">
+        </li>
+        <li>
+            <img id="dado4" src="blanco.jpg" alt="imagen en blanco">
+        </li>
+    </ol>
 </body>
 </html>

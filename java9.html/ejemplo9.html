@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="/java/index.html">
+        <img src="botonregresar.png" width="120"
+        height="50" alt="Regresar">
+    </a>
+    <title>Función factorial recursiva</title>
+    <style type="text/css">
+        p{
+            margin: 0px;
+        }
+    </style>
+    <script>
+        var salida = "";
+        function calcularFactoriales() {
+            for(var i = 0; i <= 10; ++i)
+            salida += "<p>" + i + "! = " + factorial(i) + "</p>";
+            document.getElementById("resultados").innerHTML = salida;
+        }
+        function factorial(numero) {
+            if(numero <= 1)
+                return 1;
+            else 
+                return numero * factorial(numero - 1);
+        }
+        window.addEventListener("load", calcularFactoriales, false);
+    </script>
+</head>
+<body>
+    <h1>Factoriales de 0 a 10</h1>
+    <div id="resultados"></div>
+</body>
+</html>

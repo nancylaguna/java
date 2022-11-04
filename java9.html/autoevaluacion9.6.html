@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calcular volúmenes de esferas</title>
+<script>
+    function iniciar(){
+        var boton = document.getElementById("botonCalcular");
+        boton.addEventListener("click", mostrarVolumen, false);
+    }
+    function mostrarVolumen(){
+        var campoEntrada = document.getElementById("campoRadio");
+        var radio = parseFloat(campoEntrada.value);
+        var resultado = document.getElementById("resultado");
+        resultado.innerHTML = "El volumen de la esfera es: " + volumenEsfera(radio);
+    }
+    function valumenEsfera(radio){
+        return (4.0 / 3.0) * Math.PI * Math.pow(radio, 3);
+    }
+    window.addEventListener("load", iniciar, false);
+</script>
+</head>
+<body>
+    <form action="#">
+        <p><label>Radio
+            <input id="campoRadio" type="number">
+                </label>
+            <input id="botonCalcular" type="button" value="Calcular">
+        </p>
+    </form>
+    <p id="resultado"></p>
+</body>
+</html>
