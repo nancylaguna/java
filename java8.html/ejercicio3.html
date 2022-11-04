@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="/java/index.html">
+        <img src="botonregresar.png" width="120"
+        height="50" alt="Regresar">
+    </a>
+    <title>Ejercicio 3</title>
+</head>
+<script>
+    var  x = parseInt(window.prompt("Ingrese la cantidad de numeros: "));
+    var menor=1000000;
+    for(var i = 1;i<=x;i++){
+        var y = parseInt(window.prompt("Ingresa un número"+i+ ": "));
+        if(y < menor){
+            menor = y;
+        }
+    }
+    document.writeln("<p>Escriba una secuencia de comandos que encuentre el menor de varios enteros no negativos. Suponga que el primer valor leído especifica el número de valores que el usuario introducirá.</p>");
+    document.writeln("<p>El menor de los números es: "+menor+"</p>");
+
+</script>
+<body>
+</body>
+</html>

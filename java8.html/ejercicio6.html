@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="/java/index.html">
+        <img src="botonregresar.png" width="120"
+        height="50" alt="Regresar">
+    </a>
+    <title>Ejercicio 6</title>
+</head>
+<script>
+    document.writeln("<p>Escriba una secuencia de comandos que lea cinco números entre  1 y 30. Por cada número imprima  texto que muestre una línea que contenga el mismo número de asteriscos adyacentes.</p>")
+    for(var x=0; x<=5;x++){
+        var cont=0;
+        var  n = parseInt(window.prompt("Ingrese la cantidad: "));
+        if((1<=n) && (30>=n)){
+            while(cont<n){
+                document.write("*");
+                cont++;
+            }
+        }
+        document.writeln("<p></p>")
+    }
+</script>
+<body>
+</body>
+</html>

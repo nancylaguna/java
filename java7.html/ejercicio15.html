@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="/java/index.html">
+        <img src="botonregresar.png" width="120"
+        height="50" alt="Regresar">
+    </a>
+    <title>Ejercicio 15</title>
+</head>
+<script>
+        let pass;  
+    pass = parseInt(prompt("Ingrese un número de 4 dígitos: "));
+    var pass_w = String(pass).split("").map((num)=>{
+        return Number(num)
+    })
+
+    let n1=(pass_w[2]+7)%10;
+    let n2=(pass_w[3]+7)%10;
+    let n3=(pass_w[0]+7)%10;
+    let n4=(pass_w[1]+7)%10;
+
+    let n1D=(n3-7+10)%10;
+    let n2D=(n4-7+10)%10;
+    let n3D=(n1-7+10)%10;
+    let n4D=(n2-7+10)%10;
+
+    document.writeln("<p> Escriba una secuencia de comandos que reciba como entrada un entero cifrado de cuatro dígitos y lo descifre para formar el número original.</p>");
+    document.writeln("<p>Numero cifrado es:" + n1+n2+n3+n4+"</p>");
+    document.writeln("<p>El numero orginal es: "+ n1D+n2D+n3D+n4D+"</p>");
+ </script>
+<body>
+</body>
+</html>

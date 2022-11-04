@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="/java/index.html">
+        <img src="botonregresar.png" width="120"
+        height="50" alt="Regresar">
+    </a>
+    <title>Ejercicio 11</title>
+
+    <link rel="stylesheet" href="styles/styles-ejem.css" type="text/css">
+
+</head>
+<body>
+
+    <div class="contenedor_2">
+        <h3>
+            Escriba instrucciones que asignen enteros aleatorios a la variable n en los siguientes rangos:
+        </h3>
+        <ol class="boxContent" type="a">
+            <div class="oracion">
+                <li>
+                    1 &le; n &le; 2
+                </li>
+                <p class="respuesta">
+                    n = Math.floor(Math.random() * (2) + 1);
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    1 &le; n &le; 100
+                </li>
+                <p class="respuesta">
+                    n = Math.floor(Math.random() * (100 - 1) + 1);
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    0 &le; n &le; 9
+                </li>
+                <p class="respuesta">
+                    n = Math.floor(Math.random() * (9 - 0) + 0);
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    1000 &le; n &le; 1112
+                </li>
+                <p class="respuesta">
+                    n = Math.floor(Math.random() * (1112 - 1000) + 1000);
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    -1 &le; n &le; 1
+                </li>
+                <p class="respuesta">
+                    n = Math.floor(Math.random() * (2 + 1) - 1);
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    -3 &le; n &le; 11
+                </li>
+                <p class="respuesta">
+                    n = Math.floor(Math.random() * (-3) + 11);
+                </p>
+            </div>
+        </ol>
+    </div>
+</body>
+</html>

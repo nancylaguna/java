@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="/java/index.html">
+        <img src="botonregresar.png" width="120"
+        height="50" alt="Regresar">
+    </a>
+    <title>Ejercicio 10</title>
+</head>
+<script>
+    document.writeln("<p>¿Que valores se asignan a x cuando k tiene valor de 1, 2, 3, 4 y 10?</p>")
+    document.writeln("<p>K=1, X=1</p>")
+    document.writeln("<p>K=2, X=3</p>")
+    document.writeln("<p>K=3, X=4</p>")
+    document.writeln("<p>K=4, X=3</p>")
+    document.writeln("<p>K=10, X=30</p>")
+
+    var k=10,x=0;
+    switch(k){
+        case  1: 
+            break; 
+        case 2: 
+        case 3: 
+            ++k; 
+            break; 
+        case 4:
+            --k; 
+        break;
+        default:
+            k *= 3;
+        }
+    x=k;       
+</script>
+<body>
+    
+</body>
+</html>

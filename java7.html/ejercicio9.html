@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="/java/index.html">
+        <img src="botonregresar.png" width="120"
+        height="50" alt="Regresar">
+    </a>
+    <title>Ejercicio 9</title>
+</head>
+<script>
+    document.writeln("<p>Utilzando una metodología del ejercicio 7.15, encuentre los dos  valores más grandes de los 10 que se introdujeron</p>");  
+    var numeromayor=0;
+    var segundomayor=0;
+    var menorNumero=0;
+
+    for (var contador=0; contador<5; contador++) {
+        numero=parseInt(window.prompt("Ingrese el numero:"));
+        if(numero > numeromayor){
+            segundomayor = numeromayor;
+            numeromayor = numero;
+        }
+        else if(numero > segundomayor){
+            segundomayor = numero;
+        }
+        if(numero < menorNumero){
+            menorNumero = numero;
+        }
+    }
+
+    document.writeln("<p>Número mayor es: "+ numeromayor+"</p>");
+    document.writeln("<p>El segundo número mayor es: "+ segundomayor+"</p>");
+</script>
+<body>
+</body>
+</html>

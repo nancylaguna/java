@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="/java/index.html">
+        <img src="botonregresar.png" width="120"
+        height="50" alt="Regresar">
+    </a>
+    <title>Ejercicio 3</title>
+</head>
+ <script>
+        document.writeln("<p>Los conductores se preocupan acerca del kilometraje de sus automóviles. Un conductor ha llevado el control de varios reabastecimientos de gasolina, registrando los kilómetros conducidos y los litros usados en cada viaje. Desarrolle una secuencia de comandos que reciba como entrada los kilómetros conducidas y los litros usados por cada viaje. La secuencia de comandos debe calcular y producir texto de H TM L5 que muestre d  número de kilómetros por litro  obtenidos en cada viaje, y debe imprimir d  total d e  kilómetros por litro obtenidos en todos los reabastecimientos hasta este punto. Use diálogos prompt para obtener los datos del usuario.</p>");
+        var a=parseInt(window.prompt("Ingrese la cantidad de reabastecimientos:"));
+        var totalKM=0;
+        var totalG=0;
+        var kms;
+        var gasolina;
+        var litro;
+
+        for (var i = 1; i <=a; i++) {
+                kms=parseInt(window.prompt("Ingrese la cantidad de km conducidos"));
+                gasolina=parseInt(window.prompt("Ingrese la cantidad de gasolina:"));
+                litro= kms/gasolina;
+                totalKM+=kms;
+                totalG+=gasolina;
+                
+                document.writeln("<p>Viaje "+ i + "</p>");
+                document.writeln("<p>Kilometros conducidos : "+ kms+ "</p>");
+                document.writeln("<p>Gasolina consumida : "+ gasolina+ "</p>");
+                document.writeln("<p>Gasolina por KM: : "+ litro + "</p>");
+        }
+
+        document.writeln("<p>Total de KM viajados : "+ totalKM + "</p>");
+        document.writeln("<p>Total de Gasolina : "+ totalG + "</p>");
+    </script>
+<body>
+    <p></p>
+</body>
+</html>

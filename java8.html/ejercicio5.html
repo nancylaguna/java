@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="/java/index.html">
+        <img src="botonregresar.png" width="120"
+        height="50" alt="Regresar">
+    </a>
+    <title>Ejercicio 5</title>
+</head>
+<script>
+    let monto,principal = 1000.00,tasa = 0.05;
+    document.writeln("<table><caption>Capítulo de interés compuesto</caption>");
+    for(tasa=0.05;tasa<=0.1;tasa+=0.01){
+        document.writeln("<thead><tr><th>Año</th><th>Monto en deposito para una tasa igual a: "+tasa+"</th>"); 
+        for(let anio = 1; anio <= 10; anio++){
+            monto = principal * Math.pow(1.0 + tasa, anio);
+            document.writeln("<tr><td>"+anio+"</td><td>" + monto.toFixed(2) + "</td></tr>")
+        }
+    }
+    document.writeln("</tbody></table>");
+</script>
+<body>
+    
+</body>
+</html>

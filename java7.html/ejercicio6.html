@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="/java/index.html">
+        <img src="botonregresar.png" width="120"
+        height="50" alt="Regresar">
+    </a>
+    <title>Ejercicio 6</title>
+</head>
+<script>
+    document.writeln("<p> Desarrolle una secuencia de comandos que determine el sueldo bruto para cada uno de tres empleados. La empresa paga la 'cuota normal' en las primeras 40 horas de trabajo de cada empleado, y paga 'cuota y  media' en todas las horas trabajadas que excedan de 40. Usted recibe una lista de los empleados de la empresa, el número de horas que  trabajó cada uno la  semana pasada y la tarifa por horas de cada empleado. Su programa debe recibir como entrada  esta información para cada empleado, determinar el sueldo bruto de cada uno y producir texto de H T M L5  que muestre este sueldo bruto. Utilice diálogos pronpt pata introducir los datos.</p>");
+
+    var e=parseInt(window.prompt("Ingrese la cantidad de empleados:"));
+    var total=0,c=0,p=0,horaextra=0;
+
+    for (var i = 1; i <=e; i++) {
+            h=parseInt(window.prompt("Ingrese las hora trabajadas del empleado "+i+":"));
+            p=parseInt(window.prompt("Ingrese el costo de hora:"));
+            if(h>40){
+                horaextra=(p*1.5)*(h-40);
+            }
+            document.writeln("<p>Empleado "+i+ "   | Horas: "+ h+"| Costo de hora:"+p+" | Total: $"+ (h*p+horaextra)+"</p>");
+    }
+</script>
+<body>
+    <p></p>
+</body>
+</html>

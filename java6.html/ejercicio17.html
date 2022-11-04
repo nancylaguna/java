@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="/java/index.html">
+        <img src="botonregresar.png" width="120"
+        height="50" alt="Regresar">
+    </a>
+    <title>Ejercicio 17</title>
+</head>
+<script>
+    var a=parseInt(window.prompt("Ingrese el 1er número: "));
+    var b=parseInt(window.prompt("Ingrese el 2do número: "));
+    var c=parseInt(window.prompt("Ingrese el 3er número: "));
+    var nMayor=0;
+    var nMenor=0;
+    var nCero=0;
+    if(a>0){
+        nMayor++;
+    }else if(a==0){
+        nCero++;
+    }else{
+        nMenor++;
+    }
+    if(b>0){
+        nMayor++;
+    }else if(b==0){
+        nCero++;
+    }else{
+        nMenor++;
+    }
+    if(c>0){
+        nMayor++;
+    }else if(c==0){
+        nCero++;
+    }else{
+        nMenor++;
+    }
+    
+    document.write("<p>Escriba una secuencia de comandos que reciba tres números, determine y produzca marcado que muestre la cantidad de números negativos, positivos y ceros introducidos. </p>");
+    document.write("<p> Números positivos: "+ nMayor +" Número negativos: "+ nMenor+" Ceros:"+nCero+"</p>");
+</script>
+<body>
+</body>
+</html>

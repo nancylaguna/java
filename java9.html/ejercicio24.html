@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="/java/index.html">
+        <img src="botonregresar.png" width="120"
+        height="50" alt="Regresar">
+    </a>
+    <title>Ejercicio 30</title>
+
+    <link rel="stylesheet" href="styles/styles-ejem.css" type="text/css">
+
+</head>
+<body>
+    
+    <div class="contenedor_2">
+        <h3>
+            ¿Qué hace la siguiente función?
+        </h3>
+        <div class="boxContent">
+            // El parámetro b debe ser entero <br>
+            // positivo para evitar recursividad infinita <br>
+            <b>function</b> misterio( a, b ) <br>
+            { <br>
+            &emsp;<b>if</b> ( b == 1 ) <br>
+            &emsp;&emsp;<b>return</b> a; <br>
+            &emsp;<b>else</b> <br>
+            &emsp;&emsp;<b>return</b> a + misterio(a, b - 1); <br>
+            } <br><br>
+
+            <p>
+                Regresa lo siguiente: <em> a * b </em> <br>
+                La suma de a un total de b cantidad de veces.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

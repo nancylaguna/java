@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="/java/index.html">
+        <img src="botonregresar.png" width="120"
+        height="50" alt="Regresar">
+    </a>
+    <title>Ejercicio 10</title>
+</head>
+<script>
+    var fila=10;
+    var columna;
+    while(fila>=1){
+        columna=1;
+        document.writeln("<p>");
+        while(columna<=10){
+            document.write(fila %2==1? "<":">");
+            columna++
+        }
+        --fila
+        document.writeln("</p>");
+    }
+</script>
+<body>
+</body>
+</html>
