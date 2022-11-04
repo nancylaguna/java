@@ -14,7 +14,7 @@
     let monto,principal = 1000.00,tasa = 0.05;
     document.writeln("<table><caption>Capítulo de interés compuesto</caption>");
     for(tasa=0.05;tasa<=0.1;tasa+=0.01){
-        document.writeln("<thead><tr><th>Año</th><th>Monto en deposito para una tasa igual a: "+tasa+"</th>"); 
+        document.writeln("<thead><tr><th>Año</th><th>Monto en depósito para una tasa igual a: "+tasa+"</th>"); 
         for(let anio = 1; anio <= 10; anio++){
             monto = principal * Math.pow(1.0 + tasa, anio);
             document.writeln("<tr><td>"+anio+"</td><td>" + monto.toFixed(2) + "</td></tr>")

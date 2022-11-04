@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 9.17</title>
+    <title>Ejercicio 11</title>
 
     <link rel="stylesheet" href="styles/styles-ejem.css" type="text/css">
 
@@ -26,31 +26,22 @@
 
         function mostrarC(){
             let fahrenheit = parseFloat(campoF.value);
-
             resultado.innerHTML = "ºCelsius &rArr; " + Celsius(fahrenheit).toFixed(4);
-
         }
         function mostrarF(){
             let celsius = parseFloat(campoC.value);
-
             resultado.innerHTML = "ºFahrenheit &rArr; " + Fahrenheit(celsius).toFixed(4);
-
         }
-
         function Celsius(F){
             return (5.0 / 9.0) * (F - 32);
         }
-
         function Fahrenheit(C){
             return (9.0 / 5.0) * (C + 32);
         }
-
         window.addEventListener("load", inicar, false);
     </script>
-
 </head>
 <body>
-    
     <div class="contenedor_2">
         <h3>
             Implemente las siguientes funciones:

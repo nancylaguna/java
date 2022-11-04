@@ -8,7 +8,7 @@
         <img src="botonregresar.png" width="120"
         height="50" alt="Regresar">
     </a>
-    <title>Ejercicio 22</title>
+    <title>Ejercicio 16</title>
 
     <link rel="stylesheet" href="styles/styles-ejem.css" type="text/css">
 
@@ -49,36 +49,30 @@
             numeros.push(Math.floor(Math.random() * (4 - 1 + 1) + 1 )); //pregunta
 
             switch(numeros[2]){
-                case 1://pregunta de suma
-                    //document.writeln("Pregunta 1");
+                case 1:
                     preguntaTexto.innerHTML = "¿Cuánto es " + numeros[0] + " más " + numeros[1] + "?";
                     resp = numeros[0] + numeros[1];
                     break;
-                case 2://pregunta de resta
-                    //document.writeln("Pregunta 2");
+                case 2:
                     preguntaTexto.innerHTML = "¿Cuánto es " + numeros[0] + " menos " + numeros[1] + "?";
                     resp = numeros[0] - numeros[1];
                     break;
-                case 3://pregunta de producto
-                    //document.writeln("Pregunta 3");
+                case 3:
                     preguntaTexto.innerHTML = "¿Cuánto es " + numeros[0] + " por " + numeros[1] + "?";
                     resp = numeros[0] * numeros[1];
                     break;
-                case 4://pregunta de división
-                    //document.writeln("Pregunta 4");
+                case 4:
                     preguntaTexto.innerHTML = "¿Cuánto es " + numeros[0] + " entre " + numeros[1] + "?";
                     resp = numeros[0] / numeros[1];
                     break;
             }
             primera = false;
         }
-
         window.addEventListener("load", iniciar, false);
     </script>
 
 </head>
 <body>
-    
     <div class="contenedor_2">
         <h3>
             Las computadoras desempeñan un papel cada vez mayor en la educación. Escriba un programa que ayude a un estudiante de primaria para que aprenda a multiplicar. Use <em>Math.random</em> para producir dos enteros positivos de un dígito. Después deberá mostrar una pregunta tal como <br><em>¿Cuánto es 6 por 7?</em><br>
@@ -86,14 +80,11 @@
         </h3>
         <div class="boxContent">
             <form action="#">
-                <p id="preguntaTexto"></p>
-                
+                <p id="preguntaTexto"></p>   
                 <input type="number" name="Respuesta" id="campoRes">
-                <input type="button" value="Responder" id="botonResponder">
-                
+                <input type="button" value="Responder" id="botonResponder">             
                 <p id="mensajeR"></p>
-
-                <p id="correctos">Respuestas correctas: 0</p>
+               <p id="correctos">Respuestas correctas: 0</p>
             </form>
         </div>
     </div>

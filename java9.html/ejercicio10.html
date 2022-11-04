@@ -8,7 +8,7 @@
         <img src="botonregresar.png" width="120"
         height="50" alt="Regresar">
     </a>
-    <title>Ejercicio 16</title>
+    <title>Ejercicio 10</title>
 
     <link rel="stylesheet" href="styles/styles-ejem.css" type="text/css">
 
@@ -21,14 +21,12 @@
 
             validar(numeroS);
         }
-
         function validar(numS){
             if(Number.isInteger(parseInt(numS)) && (parseInt(numS) >= 1 && parseInt(numS) <= 99999)) 
                 mostrarDigitos(numS);
             else
                 window.alert("Ingrese un valor válido.");
         }
-
         function mostrarDigitos(numero){
             let numeroEntero = parseInt(numero);
             let temp = 0, div = 1;
@@ -46,19 +44,15 @@
                 else{
                     temp = parseInt((numeroEntero / div) % 10);
                     div /= 10;
-                }
-                
+                }          
                 resultado.innerHTML += temp + "  ";
-            }
-            
+            }         
         }
-
         window.addEventListener("load", iniciar, false);
     </script>
 
 </head>
 <body>
-   
     <div class="contenedor_2">
         <h3>
             Escriba segmentos de programa que realicen cada una de las siguientes tareas:
@@ -94,11 +88,8 @@
                         &emsp;&emsp;let numeroEntero = parseInt(numero); <br>
                         &emsp;&emsp;let temp = 0, div = 1; <br>
                         &emsp;&emsp;if(numeroEntero >= 1 && numeroEntero <= 99999){ <br> <br>
-
-                        &emsp;&emsp;&emsp;&emsp;for(let i = 1; i < numero.length; i++) div *= 10; <br><br>
-                        
+                        &emsp;&emsp;&emsp;&emsp;for(let i = 1; i < numero.length; i++) div *= 10; <br><br>                        
                         &emsp;&emsp;&emsp;&emsp;for(let i = 1; i <= numero.length; i++){ <br><br>
-                            
                         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if( i == 1 ){ <br>
                         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;temp = parseInt(numeroEntero / div); <br>
                         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;div /= 10; <br>
@@ -108,8 +99,7 @@
                         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;else{ <br>
                         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;temp = parseInt((numeroEntero / div) % 10); <br>
                         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;div /= 10; <br>
-                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;} <br> <br>
-                        
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;} <br> <br>                       
                         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;document.writeln(temp + "&emsp;&emsp;"); <br>
                         &emsp;&emsp;&emsp;&emsp;} <br>
                         &emsp;&emsp;} <br>

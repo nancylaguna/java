@@ -8,7 +8,7 @@
         <img src="botonregresar.png" width="120"
         height="50" alt="Regresar">
     </a>
-    <title>Ejercicio 27</title>
+    <title>Ejercicio 21</title>
 
     <link rel="stylesheet" href="styles/styles-ejem.css" type="text/css">
 
@@ -92,9 +92,7 @@
 
         function reinicar(){
             boton.disabled = false;
-            //boton.hidden = false;
             botonR.disabled = true;
-            //botonR.hidden = true;
             aciertos = 0;
             inc = 0;
             contador = 0;
@@ -174,37 +172,32 @@
             numeros.shift();
             numeros.shift();
             
-            numeros.push(Math.floor(Math.random() * (max_numero - 1 + 1) + 1 )); //primer número
+            numeros.push(Math.floor(Math.random() * (max_numero - 1 + 1) + 1 )); 
             
-            numeros.push(Math.floor(Math.random() * (max_numero - 1 + 1) + 1 )); //segundo número
+            numeros.push(Math.floor(Math.random() * (max_numero - 1 + 1) + 1 )); 
             
-            numeros.push(Math.floor(Math.random() * (max_pregunta - min_pregunta + 1) + min_pregunta )); //pregunta
+            numeros.push(Math.floor(Math.random() * (max_pregunta - min_pregunta + 1) + min_pregunta )); 
             
             switch(numeros[2]){
-                case 1://pregunta de suma
-                    //document.writeln("Pregunta 1");
+                case 1:
                     preguntaTexto.innerHTML = "¿Cuánto es " + numeros[0] + " más " + numeros[1] + "?";
                     resp = numeros[0] + numeros[1];
                     break;
-                case 2://pregunta de resta
-                    //document.writeln("Pregunta 2");
+                case 2:
                     preguntaTexto.innerHTML = "¿Cuánto es " + numeros[0] + " menos " + numeros[1] + "?";
                     resp = numeros[0] - numeros[1];
                     break;
-                case 3://pregunta de producto
-                    //document.writeln("Pregunta 3");
+                case 3:
                     preguntaTexto.innerHTML = "¿Cuánto es " + numeros[0] + " por " + numeros[1] + "?";
                     resp = numeros[0] * numeros[1];
                     break;
-                case 4://pregunta de división
-                    //document.writeln("Pregunta 4");
+                case 4:
                     preguntaTexto.innerHTML = "¿Cuánto es " + numeros[0] + " entre " + numeros[1] + "?";
                     resp = numeros[0] / numeros[1];
                     break;
             }
             primera = false;
         }
-
         window.addEventListener("load", iniciar, false);
     </script>
 
@@ -223,9 +216,7 @@
                     <p id="preguntaTexto"></p>
                     
                     <input type="number" name="Respuesta" id="campoRes">
-                    <input type="button" value="Responder" id="botonResponder">
-                    
-                    
+                    <input type="button" value="Responder" id="botonResponder"> 
                 </form>
                 <p id="mensajeR"></p>
     

@@ -8,7 +8,7 @@
         <img src="botonregresar.png" width="120"
         height="50" alt="Regresar">
     </a>
-    <title>Ejercicio 24</title>
+    <title>Ejercicio 18</title>
 
     <link rel="stylesheet" href="styles/styles-ejem.css" type="text/css">
 
@@ -35,9 +35,7 @@
 
         function reinicar(){
             boton.disabled = false;
-            //boton.hidden = false;
             botonR.disabled = true;
-            //botonR.hidden = true;
             aciertos = 0;
             inc = 0;
             contador = 0;
@@ -111,7 +109,6 @@
                     return "No. Siga intentando.";
             }
         }
-
         function generar(){
             numeros.shift();
             numeros.shift();
@@ -121,30 +118,25 @@
             numeros.push(Math.floor(Math.random() * (4 - 1 + 1) + 1 )); //pregunta
 
             switch(numeros[2]){
-                case 1://pregunta de suma
-                    //document.writeln("Pregunta 1");
+                case 1:
                     preguntaTexto.innerHTML = "¿Cuánto es " + numeros[0] + " más " + numeros[1] + "?";
                     resp = numeros[0] + numeros[1];
                     break;
-                case 2://pregunta de resta
-                    //document.writeln("Pregunta 2");
+                case 2:
                     preguntaTexto.innerHTML = "¿Cuánto es " + numeros[0] + " menos " + numeros[1] + "?";
                     resp = numeros[0] - numeros[1];
                     break;
-                case 3://pregunta de producto
-                    //document.writeln("Pregunta 3");
+                case 3:
                     preguntaTexto.innerHTML = "¿Cuánto es " + numeros[0] + " por " + numeros[1] + "?";
                     resp = numeros[0] * numeros[1];
                     break;
-                case 4://pregunta de división
-                    //document.writeln("Pregunta 4");
+                case 4:
                     preguntaTexto.innerHTML = "¿Cuánto es " + numeros[0] + " entre " + numeros[1] + "?";
                     resp = numeros[0] / numeros[1];
                     break;
             }
             primera = false;
         }
-
         window.addEventListener("load", iniciar, false);
     </script>
 
